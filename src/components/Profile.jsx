@@ -21,7 +21,7 @@ const Profile = () => {
         const isDelete = deleteRef.current.value;
         if(isDelete === "Delete Account"){
             await axios
-          .post("http://localhost:8000/user/delete-account", {
+          .post("https://vel-cars.herokuapp.com/user/delete-account", {
             userId: activeUser._id,
           })
           .then((res) => {

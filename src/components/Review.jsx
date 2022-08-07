@@ -49,7 +49,7 @@ const Review = ({flexDir}) => {
 
     const review = reviewRef.current.value;
     await axios
-      .post("http://localhost:8000/user/add-review", {
+      .post("https://vel-cars.herokuapp.com/user/add-review", {
         userId: activeUser._id,
         username: activeUser.username,
         review: review,

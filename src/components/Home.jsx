@@ -38,7 +38,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProductsData = async () => {
       await axios
-        .get("http://localhost:8000/common/fetch-all-cars")
+        .get("https://vel-cars.herokuapp.com/common/fetch-all-cars")
         .then((res) => {
           console.log(res.data);
           setAllProducts(res.data);
@@ -51,7 +51,7 @@ const Home = () => {
     };
     const fetchCarModelsData = async () => {
       await axios
-        .get("http://localhost:8000/admin/fetch-car-models")
+        .get("https://vel-cars.herokuapp.com/admin/fetch-car-models")
         .then((res) => {
           setCarModels(res.data.sort());
           console.log(res.data);
@@ -65,12 +65,12 @@ const Home = () => {
         const user = jwtDecode(token);
         if (!user.isAdmin) {
           await axios
-            .get(`http://localhost:8000/user/fetch-wishlist/${user._id}`)
+            .get(`https://vel-cars.herokuapp.com/user/fetch-wishlist/${user._id}`)
             .then((res) => {
               res.data.map(async (w) => {
                 if (!w.productId) {
                   await axios
-                    .post("http://localhost:8000/user/remove-from-wishlist", {
+                    .post("https://vel-cars.herokuapp.com/user/remove-from-wishlist", {
                       id: user._id,
                       _id: w._id,
                     })
@@ -93,7 +93,7 @@ const Home = () => {
     };
     const fetchReviews = async () => {
       await axios
-        .get("http://localhost:8000/common/fetch-review")
+        .get("https://vel-cars.herokuapp.com/common/fetch-review")
         .then((res) => {
           console.log(res.data);
           setReviews(res.data);

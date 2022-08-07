@@ -52,7 +52,7 @@ const CarDetails = () => {
         return w.productId._id !== productId;
       });
       await axios
-        .post("http://localhost:8000/user/remove-from-wishlist", {
+        .post("https://vel-cars.herokuapp.com/user/remove-from-wishlist", {
           id: activeUser._id,
           productId,
         })
@@ -68,7 +68,7 @@ const CarDetails = () => {
         .catch((err) => console.log(err));
     } else {
       await axios
-        .post("http://localhost:8000/user/add-to-wishlist", {
+        .post("https://vel-cars.herokuapp.com/user/add-to-wishlist", {
           id: activeUser._id,
           productId,
         })
@@ -88,7 +88,7 @@ const CarDetails = () => {
   useEffect(() => {
     const fetchCurrentProduct = async () => {
       await axios
-        .get(`http://localhost:8000/common/fetch-specific-car/${id}`)
+        .get(`https://vel-cars.herokuapp.com/common/fetch-specific-car/${id}`)
         .then((res) => {
           setCurrentProduct(res.data);
           console.log(res.data);
@@ -101,7 +101,7 @@ const CarDetails = () => {
 
   const handleDeleteCar = async () => {
     await axios
-      .delete(`http://localhost:8000/admin/delete-car/${id}`)
+      .delete(`https://vel-cars.herokuapp.com/admin/delete-car/${id}`)
       .then((res) => {
         toast("Deleted Successfully", {
           icon: <FaTrash />,

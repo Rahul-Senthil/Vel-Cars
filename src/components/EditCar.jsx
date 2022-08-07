@@ -24,7 +24,7 @@ const EditCar = () => {
   useEffect(() => {
     const fetchCurrentProduct = async () => {
       await axios
-        .get(`http://localhost:8000/common/fetch-specific-car/${id}`)
+        .get(`https://vel-cars.herokuapp.com/common/fetch-specific-car/${id}`)
         .then((res) => {
           setCurrentProduct(res.data);
           setUploadedImage([...res.data.imageDetails]);
@@ -172,7 +172,7 @@ const EditCar = () => {
         };
         console.log(newProduct);
         await axios
-          .post(`http://localhost:8000/admin/edit-car/${id}`, newProduct)
+          .post(`https://vel-cars.herokuapp.com/admin/edit-car/${id}`, newProduct)
           .then((res) => {
             console.log(res.data, res.status);
             if (res.status === 200) {

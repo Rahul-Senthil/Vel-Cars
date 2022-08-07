@@ -56,7 +56,7 @@ const Cars = () => {
   useEffect(() => {
     const fetchProductsData = async () => {
       await axios
-        .get("http://localhost:8000/common/fetch-all-cars")
+        .get("https://vel-cars.herokuapp.com/common/fetch-all-cars")
         .then((res) => {
           setAllProducts(res.data);
           if (filteredProducts.length === 0) {
@@ -68,7 +68,7 @@ const Cars = () => {
     };
     const fetchCarModelsData = async () => {
       await axios
-        .get("http://localhost:8000/admin/fetch-car-models")
+        .get("https://vel-cars.herokuapp.com/admin/fetch-car-models")
         .then((res) => {
           setCarModels(res.data.sort());
           console.log(res.data);

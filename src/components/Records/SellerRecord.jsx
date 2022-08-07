@@ -14,7 +14,7 @@ const SellerRecord = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get("http://localhost:8000/admin/fetch-seller-records")
+        .get("https://vel-cars.herokuapp.com/admin/fetch-seller-records")
         .then((res) => {
           setSellersRecord(res.data);
           console.log(res.data);
@@ -26,7 +26,7 @@ const SellerRecord = () => {
 
   const handleDeleteRecord = async (id) => {
     await axios
-      .delete(`http://localhost:8000/admin/delete-seller-record/${id}`)
+      .delete(`https://vel-cars.herokuapp.com/admin/delete-seller-record/${id}`)
       .then((res) => {
         console.log(res.data);
         toast.success(res.data);

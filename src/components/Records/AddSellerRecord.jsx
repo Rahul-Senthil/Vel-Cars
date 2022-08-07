@@ -59,7 +59,7 @@ const AddSellerRecord = () => {
 
     if (!error) {
       await axios
-        .post("http://localhost:8000/admin/add-seller-record", newSellerRecord)
+        .post("https://vel-cars.herokuapp.com/admin/add-seller-record", newSellerRecord)
         .then((res) => {
           console.log(res.data);
           toast.success("Added Successfully");

@@ -147,7 +147,7 @@ const AddCar = () => {
         };
         console.log(newProduct);
         await axios
-          .post("http://localhost:8000/admin/add-car", newProduct)
+          .post("https://vel-cars.herokuapp.com/admin/add-car", newProduct)
           .then((res) => {
             console.log(res.data, res.status);
             if (res.status === 200) {

@@ -24,7 +24,7 @@ const CarsList = ({ product, index, sold }) => {
         return w.productId._id !== productId;
       });
       await axios
-        .post("http://localhost:8000/user/remove-from-wishlist", {
+        .post("https://vel-cars.herokuapp.com/user/remove-from-wishlist", {
           id: activeUser._id,
           productId,
         })
@@ -37,7 +37,7 @@ const CarsList = ({ product, index, sold }) => {
         .catch((err) => console.log(err));
     } else {
       await axios
-        .post("http://localhost:8000/user/add-to-wishlist", {
+        .post("https://vel-cars.herokuapp.com/user/add-to-wishlist", {
           id: activeUser._id,
           productId,
         })

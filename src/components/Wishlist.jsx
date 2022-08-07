@@ -30,7 +30,7 @@ const Wishlist = () => {
     });
     console.log(newWishlist);
     await axios
-      .post("http://localhost:8000/user/remove-from-wishlist", {
+      .post("https://vel-cars.herokuapp.com/user/remove-from-wishlist", {
         id: activeUser._id,
         productId,
       })

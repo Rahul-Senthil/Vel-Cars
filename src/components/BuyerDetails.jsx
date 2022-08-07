@@ -19,7 +19,7 @@ const BuyerDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:8000/admin/fetch-buyer-record/${id}`)
+        .get(`https://vel-cars.herokuapp.com/admin/fetch-buyer-record/${id}`)
         .then((res) => {
           setCurrentRecord(res.data);
           console.log(id);

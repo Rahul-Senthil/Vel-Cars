@@ -49,7 +49,7 @@ const NewPassword = () => {
         );
       } else if (!error) {
         await axios
-          .post("http://localhost:8000/auth/change-password", {
+          .post("https://vel-cars.herokuapp.com/auth/change-password", {
             userId: activeUser._id,
             newPassword: confirmPass,
           })

@@ -64,7 +64,7 @@ const Register = ({ setWhich }) => {
 
     if (!error) {
       await axios
-        .post("http://localhost:8000/auth/register", registerCredentials)
+        .post("https://vel-cars.herokuapp.com/auth/register", registerCredentials)
         .then((res) => {
           sessionStorage.setItem("token", res.data);
           toast(`Welcome ${jwtDecode(res.data).username}`, {

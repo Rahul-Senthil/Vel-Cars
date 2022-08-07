@@ -62,7 +62,7 @@ const Login = ({ setWhich }) => {
 
     if (!error) {
       await axios
-        .post("http://localhost:8000/auth/login", loginCredentials)
+        .post("https://vel-cars.herokuapp.com/auth/login", loginCredentials)
         .then((res) => {
           sessionStorage.setItem("token", res.data);
           toast(`Welcome ${jwtDecode(res.data).username}`, {

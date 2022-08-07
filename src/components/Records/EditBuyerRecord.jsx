@@ -24,7 +24,7 @@ const EditBuyerRecord = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`http://localhost:8000/admin/fetch-buyer-record/${id}`)
+        .get(`https://vel-cars.herokuapp.com/admin/fetch-buyer-record/${id}`)
         .then((res) => {
           setCurrentRecord(res.data);
           console.log(id);
@@ -57,7 +57,7 @@ const EditBuyerRecord = () => {
 
     await axios
       .post(
-        `http://localhost:8000/admin/edit-buyer-record/${id}`,
+        `https://vel-cars.herokuapp.com/admin/edit-buyer-record/${id}`,
         editBuyerRecord
       )
       .then((res) => {
