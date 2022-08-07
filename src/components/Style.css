@@ -1,0 +1,1749 @@
+@import url("http://fonts.cdnfonts.com/css/nats");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+.nav_space {
+  /* width:450px; */
+  width: auto;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.nav_left {
+  margin-left: 30px;
+}
+.nav_item {
+  /* width: 90px; */
+  font-family: "NATS";
+  font-size: 22px;
+  /* color: black !important; */
+  /* font-weight: 700; */
+  /* border: 1px solid white; */
+  margin-left: 30px;
+}
+
+/* .navbar-nav{
+  float: center;
+} */
+
+.view-btn {
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  width: 120px;
+  height: 45px;
+  margin-top: 5px;
+  /* color: black; */
+  /* font-weight: bold; */
+  font-size: 18px;
+}
+
+.filter-title {
+  font-family: "NATS";
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.filters h4 {
+  font-family: "NATS";
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.index_back {
+  /* background-image: radial-gradient(74.38% 74.38% at 50% 32.82%, #DAC4DC 0%, #3F7893 100%); */
+  background: radial-gradient(
+    74.38% 74.38% at 50% 32.82%,
+    #dac4dc 0%,
+    #12c2e9 100%
+  );
+  /* border-style: solid; */
+  border: 1px solid #12c2e9;
+  /* border-color: black; */
+  /* border-width: 0.1px; */
+  height: auto;
+}
+
+/* .navbar{
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  justify-content: space-between;
+  border: 2px solid red;
+} */
+
+.navbar-brand {
+  /* border: 1px solid red; */
+  height: 50px;
+  padding-top: 0;
+}
+.navbar-brand span:nth-of-type(1) {
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #db2f69;
+  padding: 0;
+  /* transform: translateY(-30px) */
+}
+
+.navbar-brand span:nth-of-type(2) {
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-top: -15px;
+  padding: 0px;
+}
+.inline {
+  display: inline;
+}
+.banner {
+  width: 100%;
+  height: 700px;
+  left: 0px;
+  top: 0px;
+  background: radial-gradient(
+    74.38% 74.38% at 50% 32.82%,
+    #dac4dc 0%,
+    #3f7893 100%
+  );
+  overflow: hidden;
+  /* border: 1px solid red; */
+  position: absolute;
+  /* margin-top: -50px; */
+}
+
+.banner-content {
+  position: relative;
+}
+
+.banner-img {
+  position: relative;
+  width: 800px;
+  /* height: 380px; */
+  left: 530px;
+  /* top: 330px; */
+  margin-top: -220px;
+  transform: translateY(100px);
+  /* border: 1px solid black; */
+  animation: takeoff 3s forwards;
+  visibility: hidden;
+  animation-delay: 1s;
+}
+
+@keyframes takeoff {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+.banner-btn {
+  margin-left: 7%;
+  font-family: "NATS";
+  margin-top: 100px;
+  width: 320px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.banner-btn button {
+  font-size: 20px;
+  width: 150px;
+  font-weight: bold;
+}
+.banner-btn button:nth-of-type(2){
+  background-color: #db2f69;
+  color: black;
+}
+.banner-btn button:nth-of-type(1){
+  background-color: black;
+  color: #db2f69;
+}
+
+.banner-text {
+  width: 500px;
+  height: 240px;
+  margin-left: 5%;
+  margin-top: 150px;
+  /* border: 1px solid red; */
+  display: flex;
+  font-family: "NATS";
+  font-style: normal;
+  padding: 10px;
+}
+
+.banner-text h1 {
+  font-weight: 400;
+  font-size: 400px;
+  line-height: 200px;
+  /* border: 1px solid black; */
+  /* color: #db2f69; */
+  color: #db2f69;
+}
+
+.banner-text h2 {
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 30px;
+  line-height: 65px;
+  color: black;
+  /* border: 1px solid red; */
+  /* color: #cbcbcb; */
+}
+
+.banner-text h2:nth-of-type(2) {
+  margin-top: -10px;
+}
+
+.red-circle {
+  font-size: 130px;
+  margin-top: -106px;
+  margin-left: 120px;
+  color: #db2f69;
+  /* color: rgb(238, 238, 238); */
+  transform: translateX(150px);
+  /* transform: translate(-50%, -50%); */
+  animation: zoomout 3s forwards;
+}
+
+@keyframes zoomout {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  33.33% {
+    transform: translateX(100px) rotate(0deg);
+  }
+
+  100% {
+    font-size: 30px;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.carmodel-banner {
+  height: 250px;
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e35d5b, #e53935);
+}
+@media screen and (max-width: 600px) {
+  .banner-img {
+    position: relative;
+    width: 300px;
+    margin-top: -80px;
+    /* height: 380px; */
+    left: 30px;
+    /* top: 330px; */
+    transform: translateY(30px);
+    /* border: 1px solid black; */
+    animation: takeoff 3s forwards;
+    visibility: hidden;
+    animation-delay: 1s;
+  }
+  .banner-text {
+    width: 320px;
+    height: 240px;
+    margin-left: 2%;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    font-family: "NATS";
+    font-style: normal;
+    padding: 10px;
+  }
+
+  .banner-text h1 {
+    font-weight: 200;
+    font-size: 230px;
+    line-height: 100px;
+    color: #db2f69;
+    /* color: #cbcbcb; */
+    /* margin-left: 20px; */
+  }
+
+  .banner-text h2 {
+    font-weight: 200;
+    font-size: 36px;
+    margin-top: 11px;
+    line-height: 35px;
+    color: black;
+    /* margin-left: 20px; */
+    /* color: #880808; */
+  }
+  .banner-text h2:nth-of-type(2) {
+    margin-top: -10px;
+  }
+
+  .red-circle {
+    font-size: 21px !important;
+    margin-top: -77px;
+    margin-left: 86px;
+    color: #db2f69;
+    /* color: #880808; */
+    transform: translateX(70px);
+    /* transform: translate(-50%, -50%); */
+    animation: zoomout 3s forwards;
+  }
+  .banner-content {
+    position: relative;
+  }
+  .banner-btn {
+    margin-left: 7%;
+    font-family: "NATS";
+    /* margin-top: 0px; */
+    width: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-180px);
+    display:none;
+  }
+}
+.aboutusgroupimg {
+  width: 500px !important;
+  /* height: 400px !important; */
+  object-fit: contain;
+  /* border: 1px solid black; */
+  /* height: 300px !important; */
+}
+@media screen and (max-width: 600px) {
+  .aboutusgroupimg {
+    width: 300px !important;
+    height: auto !important;
+  }
+  .owerflowhidden {
+    overflow-x: hidden !important;
+  }
+}
+.new-products {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  padding: 10px;
+  /* margin-right: 50px; */
+  justify-content: space-evenly;
+}
+
+.new_arrivals {
+  width: 400px;
+  height: 45px;
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 85px;
+  /* display: flex;
+text-align: center;
+padding-left: 45px; */
+  /* color: #DB2F69; */
+  color: #db2f69;
+}
+.center {
+  display: flex;
+  justify-content: space-around;
+}
+.carbg {
+  background-color: #000000;
+  height: 450px;
+}
+
+.imgborder {
+  border-style: solid;
+  border-width: 13px;
+  border-color: white;
+}
+.cardstyle {
+  background: #ffffff;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25), 2px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.cardbodystyle {
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 420;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #000000;
+}
+.cardpadding {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.review-card {
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  /* box-shadow: 2px 8px 10px purple; */
+  background-color: #12c2e9;
+}
+.viewmorebutton {
+  width: 190px;
+  height: 42px;
+  border: transparent;
+  background: #db2f69;
+  /* background: #DB2F69; */
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+.viewmoretext {
+  font-family: "NATS";
+  color: #ffffff;
+  font-size: 20px;
+}
+.homehorizontal {
+  width: auto;
+  height: 0px;
+
+  border: 1px solid #045176;
+}
+.aboutus {
+  width: 190px;
+  height: 58px;
+
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 85px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 27px;
+  /* color: #DB2F69; */
+  color: #880808;
+}
+.aboutusimg {
+  /* background-image: url('../images/lightbubbles.jpg'); */
+  /* background-image: url("../images/bg.png"); */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll; */
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  width: 100%;
+  /* height: 500px; */
+}
+.shadow1 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 168.3%,
+    rgba(255, 255, 255, 0.1) 268.3%
+  );
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  /* height:600px; */
+  /* height: 460px; */
+  border-radius: 30px;
+}
+.blurspace {
+  padding: 20px;
+  /* border: 1px solid red; */
+}
+.care-car {
+  /* border: 1px solid red; */
+  font-family: "NATS";
+  /* width: 100px; */
+  /* font-size: 50px; */
+}
+.care-car span:nth-of-type(1) {
+  font-size: 40px;
+  color: #db2f69;
+}
+.care-car span:nth-of-type(2) {
+  font-size: 30px;
+  /* color: white; */
+}
+.care-car span:nth-of-type(3) {
+  font-size: 40px;
+  color: #045176;
+}
+.developers {
+  background-color: white;
+}
+.review-section {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.review-form {
+  width: 450px;
+  height: 370px;
+  /* border: 1px solid red; */
+  /* box-shadow: 3px 8px 10px #f64f59; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 20px; */
+}
+
+.review-form textarea {
+  width: 400px;
+  height: 150px;
+  font-family: "NATS";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.review-img img {
+  /* border: 1px solid red; */
+  width: 600px;
+  height: 500px;
+  object-fit: contain;
+}
+.developerimage {
+  border-radius: 50%;
+}
+/* .footer{
+  margin-top: 50px;
+} */
+.footercolor {
+  background-color: #2c2c2c;
+}
+.secondfooter {
+  background-color: #212121;
+  color: white;
+}
+.footerpadding {
+  padding-top: 10px;
+}
+.social {
+  color: white;
+}
+.vel_logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.car_view {
+  width: auto;
+  /* background: #FED89D; */
+  background: radial-gradient(
+    74.38% 74.38% at 50% 32.82%,
+    #dac4dc 0%,
+    #3f7893 100%
+  );
+  border-radius: 8px;
+  height: auto;
+}
+.view_img {
+  /* width: 811px; */
+  width: 100%;
+  height: 546px;
+  /* width:100%;
+height:auto; */
+
+  border-radius: 8px;
+  background: white;
+}
+.view_text {
+  /* width: 381px; */
+  height: 546px;
+  /* width:100%;
+height:auto; */
+  width: 100%;
+  background: #f2f0ed;
+  border-radius: 5px;
+  line-height: 20px;
+}
+.white {
+  color: white;
+}
+.view_img_box {
+  /* width: 831px;
+    height: 566px; */
+  height: 566px;
+  width: auto;
+  padding: 10px;
+}
+.view_paddingbox {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.view_textbox {
+  padding: 10px;
+  /* width: 381px;
+    height: 546px; */
+  width: auto;
+  height: 566px;
+}
+
+.records {
+  height: auto;
+}
+
+.dashboard-activity h3 {
+  margin-bottom: 50px;
+}
+
+.car-list {
+  margin-left: 50px;
+}
+
+.each-car {
+  margin-right: 50px;
+}
+
+.more-cars {
+  font-family: "NATS";
+  font-size: 30px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #db2f69;
+}
+
+.modern-cars {
+  width: 300px;
+  height: 215px;
+  /* border: 1px solid red; */
+  /* background-color: rgb(238, 234, 234); */
+  border-radius: 20px;
+  /* padding-top: 10px; */
+  /* padding-left: 5px; */
+  cursor: pointer;
+}
+
+.modern-cars img {
+  width: 300px;
+  height: 180px;
+  /* object-fit: contain; */
+  border-radius: 20px;
+}
+
+.modern-cars span:nth-of-type(1) {
+  margin-left: 18px;
+}
+
+.modern-cars span {
+  font-family: "NATS";
+  font-size: 18px;
+}
+
+.rec-dot_active {
+  background-color: #12c2e9 !important;
+  box-shadow: 0 0 1px 3px #12c2e9 !important;
+}
+.rec-dot:focus,
+.rec-dot:hover {
+  box-shadow: 0 0 1px 3px #12c2e9 !important;
+}
+.rec-dot_active:focus,
+.rec-dot_active:hover {
+  background-color: #12c2e9 !important;
+  box-shadow: 0 0 1px 3px #12c2e9 !important;
+}
+
+.rec-arrow {
+  background-color: #12c2e9 !important;
+  transition: all 0.3s ease;
+  font-size: 1.1rem !important;
+  color: white !important;
+  width: 1.7rem !important;
+  height: 1.7rem !important;
+  min-width: 1.7rem !important;
+  line-height: 1.7rem !important;
+}
+
+/* .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  right: 0;  
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  left: 0; 
+} */
+
+.about-img {
+  width: 600px;
+}
+
+.about-content {
+  width: 700px;
+  font-family: "NATS";
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.about-cards {
+  width: 200px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "NATS";
+}
+
+.about-numbers {
+  font-size: 28px;
+  color: #db2f69;
+}
+
+.about-icons {
+  font-size: 40px;
+  color: grey;
+}
+
+.about-text {
+  transform: translateY(-10px);
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "NATS";
+  font-size: 22px;
+  height: auto;
+  justify-content: space-around;
+}
+
+.contact-text {
+  /* width: 50%; */
+  /* background-color: #db2f69; */
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.contact-text ul li {
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.contact-img img {
+  width: 500px;
+}
+
+.admin-change-pass{
+  padding: 30px;
+}
+
+.admin-change-pass h3{
+  font-family: "NATS";
+}
+
+.change-password {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
+.change-pass-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-pass-img img {
+  width: 500px;
+}
+
+.new-password {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #12c2e9;
+}
+
+.new-password h3 {
+  font-family: "NATS";
+}
+
+.password-form input {
+  width: 250px;
+}
+
+.password-form button {
+  width: 150px;
+  font-family: "NATS";
+  font-size: 18px;
+  /* height: 35px; */
+}
+
+.delete-account {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.delete-acc h3 {
+  font-family: "NATS";
+  color: white;
+}
+
+.delete-acc input {
+  font-family: "NATS";
+  font-size: 18px;
+  color: red;
+}
+
+.delete-acc {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #db2f69;
+}
+
+.delete-acc button {
+  font-family: "NATS";
+  font-size: 18px;
+  width: 150px;
+}
+
+.del-acc-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.del-acc-img img {
+  width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .view_img_box {
+    height: auto !important;
+  }
+  .view_img {
+    height: auto !important;
+  }
+  .review-form {
+    width: 350px;
+    /* border: 1px solid red; */
+    /* box-shadow: 1px 1px 20px #f64f59; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-form textarea {
+    width: 270px;
+    height: 150px;
+    font-family: "NATS";
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .review-img img {
+    /* border: 1px solid red; */
+    width: 340px;
+    height: 400px;
+    object-fit: contain;
+  }
+  .car-list {
+    margin-left: 6px;
+  }
+
+  .each-car {
+    margin-right: 0px;
+  }
+
+  .more-cars {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .modern-cars {
+    width: 280px;
+    height: 190;
+  }
+  .modern-cars img {
+    width: 280px;
+    height: 170px;
+  }
+  .about-img {
+    width: 340px;
+  }
+  .contact-img img {
+    width: 340px;
+  }
+  .about-content {
+    padding: 10px;
+  }
+  .change-pass-img {
+    width: 100%;
+  }
+
+  .change-pass-img img {
+    width: 300px;
+  }
+
+  .new-password {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .delete-account {
+    flex-wrap: wrap-reverse;
+  }
+  .delete-acc {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+  }
+  .delete-acc label {
+    width: 300px;
+    /* fle */
+  }
+  .delete-acc input {
+    width: 250px;
+  }
+  .del-acc-img {
+    width: 100%;
+  }
+  .del-acc-img img {
+    width: 300px;
+    /* border: 1px solid red; */
+  }
+}
+.cardimgstyle {
+  width: 100%;
+  border-radius: 15px;
+  height: 225px;
+  object-fit: cover;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap");
+
+.aboutuscontent {
+  /* font-family: 'Sacramento', cursive; */
+  font-family: "NATS";
+  font-weight: 600;
+  font-size: 22px;
+}
+.reviewbackground {
+  background-color: #9ecedc;
+}
+.socialicons {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+.socialicons:hover {
+  color: rgb(208, 208, 208);
+  width: 32px;
+  height: 32px;
+}
+.footericonspace {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 20px;
+  width: 225px;
+}
+.footeritems {
+  color: white;
+  font-size: 15px;
+}
+.quotesstyle {
+  font-size: 30px;
+  color: #045f8a;
+}
+.socialtext {
+  font-size: 10px;
+}
+.footerheaderline {
+  width: 2in;
+  height: 0px;
+  border: 1px solid white;
+}
+a,
+Link:link {
+  text-decoration: none;
+}
+.footerlinepadding {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+.pricestyle {
+  font-weight: 400;
+  font-size: 35px;
+}
+.view_innerbox_padding {
+  padding: 10px;
+}
+.gaspumpstyle {
+  width: 380px;
+}
+@media screen and (max-width: 600px) {
+  .gaspumpstyle {
+    width: 300px !important;
+    line-height: 10px;
+  }
+  .makeofferbutton {
+    width: 330px !important;
+  }
+  .wishlistbutton {
+    width: 330px !important;
+  }
+  .view_innerbox_padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+.makeofferbutton {
+  width: 355px;
+  height: 42px;
+  border: transparent;
+  background: #441625;
+  border-radius: 300px;
+  text-align: center;
+}
+.makeoffertext {
+  font-family: "NATS";
+  color: #ffffff;
+  line-height: 34px;
+  font-size: 20px;
+}
+.descriptionstyle {
+  font-family: "NATS";
+  font-weight: 400;
+  font-size: 35px;
+}
+.fontnats {
+  font-family: "NATS";
+}
+.wishlistbutton {
+  width: 355px;
+  height: 42px;
+  border: transparent;
+  background: #ca1231;
+  border-radius: 300px;
+  text-align: center;
+}
+.wishlisttext {
+  font-family: "NATS";
+  color: #ffffff;
+  line-height: 34px;
+  font-size: 20px;
+}
+.adminbox {
+  height: 100px;
+  /* width:250px; */
+  width: 200px;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.admin-img img {
+  width: 600px;
+  /* border: 1px solid red; */
+  transform: translateY(-50px);
+}
+
+.a1 {
+  background-color: #db2f69;
+}
+
+.a2 {
+  background-color: #12c2e9;
+}
+
+.addcircle {
+  color: green;
+  font-size: 80px;
+}
+
+.form-bg {
+  height: auto;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.my-form {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 8px 10px grey;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 168.3%,
+    rgba(255, 255, 255, 0.1) 268.3%
+  );
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+}
+#car-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#car-form h3 {
+  font-family: "NATS";
+  color: purple;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+#car-form input,
+select {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 40px;
+  font-family: "NATS";
+  font-size: 20px;
+  padding-left: 10px;
+  /* box-shadow: 3px 10px gray; */
+  width: 350px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.upload-file {
+  width: 350px !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.purple-btn {
+  background-color: purple !important;
+  font-family: "NATS";
+  font-size: 22px;
+  letter-spacing: 1px;
+  height: 50px;
+  width: 350px;
+  border: none;
+  outline: none;
+  margin-bottom: 35px;
+  border-radius: 8px;
+  color: white;
+}
+
+.admintext {
+  font-size: 22px;
+  font-family: "NATS";
+}
+.blurspace h3 {
+  font-family: "NATS";
+}
+.adminspace {
+  width: auto;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  /* border: 1px solid blue; */
+  /* border-style: solid;
+    border-color:black ; */
+  /* font-family: "NATS"; */
+}
+.admineditbutton {
+  justify-content: space-between;
+  display: flex;
+  width: 300px;
+}
+
+.wishlist {
+  width: 85%;
+}
+.usercircle2 {
+  color: rgb(140, 15, 149);
+  font-size: 80px;
+}
+.usercircle1 {
+  color: rgb(149, 15, 75);
+  font-size: 80px;
+}
+.adminbox:hover {
+  /* height:125px;
+    width:255px; */
+  opacity: 0.8;
+}
+.dashboardsize {
+  /* width: 80%; */
+  /* height: 700px; */
+  height: auto;
+  /* border: 1px solid red; */
+}
+.admin-banner {
+  height: 200px;
+  /* background: radial-gradient(
+    74.38% 74.38% at 50% 32.82%,
+    #dac4dc 0%,
+    #12c2e9 100%
+  ); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "NATS";
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+.dashboard-activity {
+  width: 80%;
+  margin-left: 10%;
+}
+.userlogtitle {
+  color: white;
+  background-color: rgb(12, 132, 165);
+  font-family: "NATS";
+  font-size: 25px;
+  border-radius: 5px;
+}
+.userlogvalue {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.userlogadd {
+  padding-top: 30px;
+}
+.userlogbox {
+  width: 700px;
+  height: 900px;
+  margin-top: 5%;
+  background-color: white;
+}
+.viewlogbackground {
+  /* background-color:#2c9987; */
+  /* background:linear-gradient(45deg,#2c9987,#99d1c8,#2c9987,#99d1c8,#2c9987); */
+  background: linear-gradient(110deg, #dd0202 50%, #dbdbdb 50%);
+}
+.record-details {
+  height: 800px;
+}
+@media screen and (max-width: 600px) {
+  .userlogbox {
+    width: 338px;
+    height: 550px;
+  }
+  .owerflowhidden {
+    /* overflow-x:hidden; */
+    width: auto;
+  }
+  .admin-banner {
+    font-size: 28px;
+    height: 100px;
+  }
+
+  .form-bg {
+    height: auto;
+    background: white;
+  }
+  .my-form {
+    background: transparent;
+    backdrop-filter: blur(0px);
+    width: 360px;
+    box-shadow: none;
+  }
+  #car-form input,
+  select {
+    width: 300px;
+  }
+  .upload-file {
+    width: 300px !important;
+    border: none !important;
+    border-radius: 10px !important;
+  }
+  .transmission {
+    margin-left: 30px;
+  }
+  .purple-btn {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .dashboard-activity {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .dashboard-activity h3 {
+    margin-bottom: 50px;
+  }
+  .adminspace:nth-of-type(1) {
+    transform: translateY(-30px);
+  }
+  .adminbox {
+    height: 100px;
+    /* width:250px; */
+    width: 200px;
+    border-radius: 23px;
+    margin-left: 15%;
+    /* border: 1px solid red; */
+  }
+  .admin-img img {
+    width: 350px;
+    /* border: 1px solid red; */
+    margin-left: -12%;
+  }
+  .wishlist {
+    width: 100%;
+    margin-left: 3px;
+  }
+}
+
+.dashboardupd {
+  color: rgb(188, 179, 13);
+  font-size: 45px;
+}
+.dashboarddel {
+  color: rgb(189, 12, 12);
+  font-size: 45px;
+}
+.carbuttonfixed {
+  position: sticky;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: auto;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(218, 218, 218);
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+.currentfilter {
+  padding-left: 5px;
+  padding-right: 5px;
+  /* padding-top: 3px;
+  padding-bottom: 5px; */
+  height: 28px;
+  border-radius: 10px;
+  color: white;
+  font-family: "NATS";
+  font-size: 18px;
+  /* border: 1px solid black; */
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  /* overflow: hidden; */
+  margin-left: 10px;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+.currentfilter:hover {
+  cursor: pointer;
+}
+.currentfilter_space {
+  /* border: 1px solid red; */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  position: sticky;
+  margin-top: 15px;
+  /* justify-content: "space-between"; */
+  /* flex-direction: "row-reverse"; */
+}
+
+.filterstylecollapse {
+  overflow: auto;
+  /* height: 500px; */
+  height: 78vh;
+  /* width:300px, */
+}
+.folterboxcollapse {
+  width: 308px;
+
+  /* height: "auto", */
+}
+.filterstyle {
+  height: 30px;
+}
+.carspagestyle {
+  display: flex;
+}
+.overflowx {
+  overflow-x: hidden;
+}
+.emptyView-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  height: auto;
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  align-items: center;
+}
+.emptyView-wrap img {
+  /* max-width: 500px; */
+  max-width: fit-content;
+  width: 100%;
+}
+.carousel {
+  width: 800px;
+  /* height:500px; */
+  height: auto;
+  margin: auto;
+}
+.fulldetails {
+  margin-bottom: 50px;
+  width: 70%;
+  /* border: 1px solid black; */
+  margin-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left-side {
+  /* border: 1px solid red; */
+  width: 600px;
+  /* height: 150px; */
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(238, 234, 234);
+  border-radius: 10px;
+}
+.left-side h1 {
+  font-size: 36px;
+  font-family: "NATS";
+}
+.left-side-info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: "NATS";
+}
+.left-side-info span {
+  margin-right: 10px;
+}
+.right-side {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  width: 300px;
+  /* height: 150px; */
+  padding: 10px;
+  padding-bottom: 15px;
+  background-color: rgb(238, 234, 234);
+  border-radius: 10px;
+}
+.right-side h1 {
+  font-size: 36px;
+  font-family: "NATS";
+}
+.view-sold {
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #045f8a;
+  margin-top: 5px;
+  color: white;
+  font-family: "NATS";
+  font-size: 20px;
+}
+.overview {
+  width: 600px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  /* margin-left: 10%; */
+  margin-top: 20px;
+  padding: 10px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  background-color: rgb(238, 234, 234);
+}
+.overview h1 {
+  font-family: "NATS";
+  font-size: 28px;
+}
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "NATS";
+  font-size: 22px;
+}
+.description span {
+  margin-right: 10px;
+}
+.btns {
+  margin-top: 20px;
+  width: 300px;
+  /* height: 150px; */
+  padding: 10px;
+  padding-bottom: 15px;
+  /* background-color: rgb(238, 234, 234); */
+  border-radius: 10px;
+}
+.btns button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  font-family: "NATS";
+  font-size: 22px;
+  /* color: white; */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.cardetailname {
+  /* margin-left: 22%; */
+  text-align: center;
+  font-family: "NATS";
+  font-style: normal;
+  /* font-weight: 300; */
+  /* font-size: 60px; */
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+}
+.cardetails_cardwidth {
+  width: min-content;
+  font-family: "NATS";
+  /* height: 500px; */
+  font-size: x-large;
+  /* border: 1px solid red; */
+  /* transform: translateY(-180px); */
+}
+.testimonialImages {
+  height: 450px;
+  object-fit: contain;
+}
+.cardetailsviewdetails {
+  border-radius: 20px;
+  width: 35vh;
+}
+.cardetails_editbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90vh;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+.soldunsold {
+  font-size: 40px;
+}
+.cardetails_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.fontnats {
+  font-family: "NATS";
+}
+.table_response {
+  /* overflow-x: auto; */
+  width: 1500px;
+  /* width:auto; */
+}
+
+.footer {
+  height: auto;
+  /* border: 1px solid black; */
+  font-family: NATS;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+}
+/* .wrap-footer{
+  width: 90%;
+} */
+.footer h1 {
+  font-size: 30px;
+}
+
+.pages ul li {
+  font-size: 18px;
+  list-style-type: none;
+  transform: translateX(-20px);
+  text-decoration: none;
+}
+
+.pages,
+.contact,
+.company {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 50px;
+  /* border: 1px solid red; */
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.contact ul li {
+  list-style-type: none;
+  font-size: 18px;
+  transform: translateX(-20px);
+  margin-bottom: 15px;
+}
+
+.company span:nth-of-type(1) {
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #db2f69;
+  padding: 0;
+  /* transform: translateY(-30px) */
+}
+
+.company span:nth-of-type(2) {
+  font-family: "NATS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-top: -15px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .filterbox {
+    width: 280px;
+    border: 1px;
+    border-color: #888;
+    border-style: solid;
+    height: auto;
+  }
+  .carspagestyle {
+    display: block !important;
+    /* overflow-x: hidden !important; */
+  }
+  .emptyView-wrap {
+    font-size: 30px;
+    margin-left: 20%;
+  }
+  .emptyView-wrap img {
+    /* max-width: 500px; */
+    margin-left: -10% !important;
+    max-width: fit-content;
+    width: 100%;
+  }
+  .cardetailname {
+    margin-left: 2% !important;
+    font-size: 10vh;
+  }
+  .fulldetails {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .btns button {
+    width: 265px;
+  }
+  .testimonialImages {
+    height: 205px;
+    object-fit: contain;
+  }
+  .pages,
+  .contact,
+  .company {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+  .cardetails_cardwidth {
+    width: auto !important;
+  }
+  .cardetails_content {
+    display: block !important;
+  }
+  .carbg {
+    height: 205px;
+  }
+}
+@media (max-width: 992px) {
+  .adminspace {
+    /* margin-top: 15%; */
+    width: auto;
+    padding: 20px;
+    justify-content: space-around;
+    display: block;
+    /* border-style: solid;
+    border-color:black ; */
+  }
+  .dashboardsize {
+    height: 100%;
+  }
+}

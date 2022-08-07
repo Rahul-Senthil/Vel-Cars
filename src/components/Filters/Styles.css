@@ -1,0 +1,72 @@
+.buttons:hover {
+  cursor: pointer;
+}
+.float_right {
+  float: right;
+  margin-right: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.yearapply {
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  width: 120px;
+  color: white;
+  font-family: "NATS";
+  font-size: 18px;
+  margin-right: 10px;
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.yearclear:hover {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "NATS";
+  font-size: 18px;
+  color: white;
+}
+.yearclear {
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  width: 120px;
+  font-family: "NATS";
+  font-size: 18px;
+  border: 1px solid grey;
+}
+/* .yearclear{
+    background-color:orange;
+} */
+.yearbtngrp {
+  padding-top: 10px;
+}
+.yearinputgrp {
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  .yearfilterstyle {
+    margin-left: 10%;
+  }
+}
