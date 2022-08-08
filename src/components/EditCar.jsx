@@ -240,6 +240,7 @@ const EditCar = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "65px"
       }}
       className="form-bg"
     >

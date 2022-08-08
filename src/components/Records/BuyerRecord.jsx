@@ -39,7 +39,7 @@ const BuyerRecord = () => {
   };
 
   return (
-    <div className="record-details">
+    <div className="record-details" style={{ marginTop: "65px" }}>
       <Link to="/buyer-records/add-buyer-record">
         <button
           type="button"

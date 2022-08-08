@@ -39,7 +39,7 @@ const SellerRecord = () => {
   };
 
   return (
-    <div className="record-details">
+    <div className="record-details" style={{ marginTop: "65px" }}>
       <Link to="/seller-records/add-seller-record">
         <button
           type="button"
@@ -98,18 +98,14 @@ const SellerRecord = () => {
                   </td>
                   <td Style="padding-top:20px;">
                     <Link to={`/seller-records/edit/${b._id}`}>
-                      <button
-                        Style="width:90px;height:40px;border:none;border-radius:10px;font-size:18px;background-color:#12c2e9"
-                      >
+                      <button Style="width:90px;height:40px;border:none;border-radius:10px;font-size:18px;background-color:#12c2e9">
                         Edit
                       </button>
                     </Link>
                   </td>
                   <td Style="padding-top:20px;">
                     <div onClick={() => handleDeleteRecord(b._id)}>
-                      <button
-                        Style="width:90px;height:40px;border:none;border-radius:10px;font-size:18px;background-color:#db2f69;color:white"
-                      >
+                      <button Style="width:90px;height:40px;border:none;border-radius:10px;font-size:18px;background-color:#db2f69;color:white">
                         Delete
                       </button>
                     </div>

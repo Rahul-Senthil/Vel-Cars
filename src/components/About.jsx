@@ -15,7 +15,7 @@ import "./Style.css";
 
 const About = () => {
   return (
-    <div style={{marginTop: "65px"}}>
+    <div style={{ marginTop: "65px" }}>
       <Toaster position="top-center" reverseOrder={false} />
       <div className="admin-banner bg-dark">
         <span style={{ color: "#db2f69", marginRight: "30px" }}>ABOUT </span>
@@ -29,17 +29,16 @@ const About = () => {
           marginTop: "50px",
         }}
       >
-        <img src={aboutImg} alt="" className="about-img"/>
+        <img src={aboutImg} alt="" className="about-img" />
         <div className="about-content">
-          When it comes to personalizing your online store, nothing is more
-          effective than an About Us page. This is a quick summary of your
-          company's history and purpose, and should provide a clear overview of
-          the company's brand story. A great About Us page can help tell your
-          brand story, establish customer loyalty, and turn your bland ecommerce
-          store into an well-loved brand icon. Most importantly, it will give
-          your customers a reason to shop from your brand. In this post, we'll
-          give you three different ways to create a professional about us page
-          for your online store, blog, or other website
+          Vel Cars is a <span style={{color: "#db2f69"}}>refurbised</span> or <span style={{color: "#db2f69"}}>second-hand car</span> selling platform with many
+          number of brands and models of cars. We buy cars from trusted
+          customers, re-work or refurbish the car to recover its best and sell
+          it to customers with affordable and reasonable marketing price. We are
+          running the buisness successfully for more than 10 years with many
+          satisfied buyers and sellers. More than 95 cars have been refurbised
+          and out of them 45 have been sold so far for happy customers :) <br />{" "}
+          Wanna sell or buy a car ? then  <span style={{color: "#db2f69", fontWeight: "bold"}}>VEL CARS</span> is the perfect place for you!
         </div>
       </div>
       <div
@@ -55,7 +54,7 @@ const About = () => {
             <div className="center">
               <GiAchievement className="about-icons" />
             </div>
-            <div className="center about-numbers">150+</div>
+            <div className="center about-numbers">90+</div>
             <div className="about-text">Refurbished Cars</div>
           </div>
         </div>
@@ -98,32 +97,32 @@ const About = () => {
           <div className="contact-text">
             <ul>
               <li>
-                <TbPhoneCall style={{fontSize: "25px"}}/> <span style={{ color: "grey" }}>Phone : </span>{" "}
-                +91 9786202244
+                <TbPhoneCall style={{ fontSize: "25px" }} />{" "}
+                <span style={{ color: "grey" }}>Phone : </span> +91 9786202244
               </li>
               <li>
-                <HiOutlineMail style={{fontSize: "25px"}}/>{" "}
+                <HiOutlineMail style={{ fontSize: "25px" }} />{" "}
                 <span style={{ color: "grey" }}>Email : </span>{" "}
                 activegopal@gmail.com
               </li>
               <li>
-                <AiOutlineWhatsApp style={{fontSize: "25px"}}/>{" "}
+                <AiOutlineWhatsApp style={{ fontSize: "25px" }} />{" "}
                 <span style={{ color: "grey" }}>Whatsapp : </span> +91
                 9786202244
               </li>
               <li>
-              <div style={{marginTop: "30px"}}>
-                <img src={QR} alt="" width={150} />
-                <p
-                  style={{
-                    color: "#db2f69",
-                    fontFamily: "NATS",
-                    fontSize: "20px",
-                  }}
-                >
-                  Scan to contact the owner via whatsapp
-                </p>
-              </div>
+                <div style={{ marginTop: "30px" }}>
+                  <img src={QR} alt="" width={150} />
+                  <p
+                    style={{
+                      color: "#db2f69",
+                      fontFamily: "NATS",
+                      fontSize: "20px",
+                    }}
+                  >
+                    Scan to contact the owner via whatsapp
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -133,13 +132,11 @@ const About = () => {
         </div>
 
         <div className="admin-banner" style={{ height: "150px" }}>
-          <span style={{ color: "#db2f69", marginRight: "30px" }}>
-            REVIEW{" "}
-          </span>
+          <span style={{ color: "#db2f69", marginRight: "30px" }}>REVIEW </span>
           <span className="text-dark">US</span>
         </div>
         <div>
-        <Review flexDir={"row-reverse"}/>
+          <Review flexDir={"row-reverse"} />
         </div>
       </div>
     </div>

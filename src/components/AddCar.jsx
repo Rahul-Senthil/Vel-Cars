@@ -187,6 +187,7 @@ const AddCar = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "65px"
       }}
       className="form-bg"
     >

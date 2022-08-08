@@ -65,15 +65,20 @@ const Home = () => {
         const user = jwtDecode(token);
         if (!user.isAdmin) {
           await axios
-            .get(`https://vel-cars.herokuapp.com/user/fetch-wishlist/${user._id}`)
+            .get(
+              `https://vel-cars.herokuapp.com/user/fetch-wishlist/${user._id}`
+            )
             .then((res) => {
               res.data.map(async (w) => {
                 if (!w.productId) {
                   await axios
-                    .post("https://vel-cars.herokuapp.com/user/remove-from-wishlist", {
-                      id: user._id,
-                      _id: w._id,
-                    })
+                    .post(
+                      "https://vel-cars.herokuapp.com/user/remove-from-wishlist",
+                      {
+                        id: user._id,
+                        _id: w._id,
+                      }
+                    )
                     .then((res) => {
                       console.log(res.data);
                     })
@@ -230,17 +235,17 @@ const Home = () => {
                 </p>
               </div>
               <div class="row">
-                <div class="col-md-7 aboutuscontent ">
-                  When it comes to personalizing your online store, nothing is
-                  more effective than an About Us page. This is a quick summary
-                  of your company's history and purpose, and should provide a
-                  clear overview of the company's brand story. A great About Us
-                  page can help tell your brand story, establish customer
-                  loyalty, and turn your bland ecommerce store into an
-                  well-loved brand icon. Most importantly, it will give your
-                  customers a reason to shop from your brand. In this post,
-                  we'll give you three different ways to create a professional
-                  about us page for your online store, blog, or other website
+                <div class="col-md-7 aboutuscontent">
+                  Vel Cars is a refurbised or second hand car selling platform
+                  with many number of brands and models of cars. We buy cars
+                  from trusted customers, re-work or refurbish the car to
+                  recover its best and sell it to customers with affordable and
+                  reasonable marketing price. We are running the buisness
+                  successfully for more than 10 years with many satisfied buyers
+                  and sellers. More than 95 cars have been refurbised and out of
+                  them 45 have been sold so far for happy customers :) <br />{" "}
+                  Wanna sell or buy a car ? then VEL CARS is the perfect place
+                  for you!
                 </div>
                 <div class="col-md-5">
                   <img class="aboutusgroupimg" src={preview} alt="..." />

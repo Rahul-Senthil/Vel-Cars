@@ -30,7 +30,7 @@ const BuyerDetails = () => {
     fetchData();
   }, []);
   return (
-    <div class="" Style="width:100%;">
+    <div class="" style={{marginTop: "65px", width: "100%"}}>
       {currentRecord && (
         <>
           {/* <div class=" center ">
