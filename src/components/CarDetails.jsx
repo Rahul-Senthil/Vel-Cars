@@ -117,7 +117,7 @@ const CarDetails = () => {
   };
 
   return (
-    <div style={{marginTop: "65px"}}>
+    <div style={{ marginTop: "65px" }}>
       {currentProduct ? (
         <div>
           <div class="center carbg">
@@ -283,13 +283,16 @@ const CarDetails = () => {
                 </button>
               </div>
             ) : (
-              <div
-                className="center"
-                style={{ width: "200px"}}
-              >
+              <div className="center" style={{ width: "200px" }}>
                 <div>
                   <img src={QR} alt="" width={150} />
-                  <p style={{ color: "#db2f69", fontFamily: "NATS", fontSize: "20px" }}>
+                  <p
+                    style={{
+                      color: "#db2f69",
+                      fontFamily: "NATS",
+                      fontSize: "20px",
+                    }}
+                  >
                     Scan to contact the owner via whatsapp
                   </p>
                 </div>
@@ -300,16 +303,21 @@ const CarDetails = () => {
           <div style={{ marginBottom: "50px" }}>
             <h3 className="more-cars">More Cars</h3>
             <Scroll breakPoints={breakpoints}>
-              {allProducts
-                // .filter((product) => product.name === currentProduct.name)
-                .map((product, index) => (
-                  <ScrollCarsList
-                    product={product}
-                    index={index}
-                    setCurrentProduct={setCurrentProduct}
-                    // sold={product.sold}
-                  />
-                ))}
+              {allProducts &&
+                allProducts
+                  // .filter((product) => product.name === currentProduct.name)
+                  .map(
+                    (product, index) =>
+                      product.sold === false &&
+                      product._id !== currentProduct._id && (
+                        <ScrollCarsList
+                          product={product}
+                          index={index}
+                          setCurrentProduct={setCurrentProduct}
+                          // sold={product.sold}
+                        />
+                      )
+                  )}
             </Scroll>
           </div>
         </div>

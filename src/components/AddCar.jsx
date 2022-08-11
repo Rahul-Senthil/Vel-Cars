@@ -144,6 +144,7 @@ const AddCar = () => {
           insured,
           postedDate,
           imageDetails: [...imageDetails],
+          sold: false
         };
         console.log(newProduct);
         await axios
